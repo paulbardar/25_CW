@@ -1,5 +1,7 @@
 // 25_CW.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
+
+
 #include "MyVector.h"
 #include <string>
 #include <vector>
@@ -76,7 +78,18 @@ int main()
         med[i].showInfo();
     }
 
+    cout << "==============================================" << endl;
 
+    // 1 task
+
+    string name = "Nurofen";
+    auto find = find_if(med.begin(), med.end(), [name](Medicine a) {return a.getTitle() == name; });
+    if (find == med.end()) {
+        cout << "Not Found" << endl;
+    }
+    else {
+        med.erase(find);
+    }
 
     return 0;
 }
