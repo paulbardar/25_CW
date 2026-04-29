@@ -18,9 +18,15 @@
     <ClCompile Include="25_CW.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Medicine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Medicine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -128,8 +128,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="25_CW.cpp" />
+    <ClCompile Include="Medicine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Medicine.h" />
     <ClInclude Include="MyVector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
