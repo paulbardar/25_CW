@@ -91,6 +91,20 @@ int main()
         med.erase(find);
     }
 
+
+    for (int i = 0; i < med.size(); i++) {
+        med[i].showInfo();
+    }
+
+    cout << "==============================================" << endl;
+
+    // Task 3
+
+    for_each(med.begin(), med.end(), [](Medicine& a) {a.setPrice(a.getPrice() * 1.15); });
+    for (int i = 0; i < med.size(); i++) {
+        med[i].showInfo();
+    }
+
     return 0;
 }
 
