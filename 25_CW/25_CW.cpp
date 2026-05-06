@@ -61,8 +61,9 @@ int main()
     for (auto& a : v1) {
         cout << a << " ";
     } cout << endl;
+    
     */
-
+    /**/
     vector<Medicine> med; //size = 0, Medicine* arr = nullptr
 
     med.push_back(Medicine("Nurofen", "pills", 70.43));
@@ -89,6 +90,7 @@ int main()
     }
     else {
         med.erase(find);
+        //find->showInfo();
     }
 
 
@@ -104,7 +106,7 @@ int main()
     for (int i = 0; i < med.size(); i++) {
         med[i].showInfo();
     }
-
+    
     return 0;
 }
 
